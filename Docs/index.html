@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Semantic - Minimal portfolio template</title>
+
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<link href="assets/css/prettify.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+
+	<div class="container main">
+		<div class="row">
+
+			<div class="col-md-3">
+
+				<div class="sidebar hidden-print my_affix" role="complementary" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
+					<ul class="nav sidenav">
+						<li class="active"><a href="#introduction">Introduction</a></li>
+						<li class="active"><a href="#contact">Contact form</a></li>
+						<li class="active"><a href="#maps">Google Maps</a></li>
+						<li class="active"><a href="#plugins">Plugins settings</a></li>
+						<li class="active"><a href="#changelog">Changelog</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="col-md-9">
+
+				<section class="header">
+					<h1>Semantic - Minimal portfolio template</h1>
+				</section>
+
+				<section class="section">
+
+					<h2 id="introduction">Introduction</h2>
+					<h4>Hi customer!</h4>
+					<p>Thank you for choosing this template. If you have any questions please feel free to email <a href="mailto:web-master72@yandex.ru">here</a>.</p>
+
+					<!-- Customization -->
+
+
+
+					<h2 id="contact">Contact form</h2>
+					<p>Open the file assets/php/contact.php and enter your data:</p>
+
+					<pre class="prettyprint lang-basic">
+// Your email
+$to = 'web-master72@yandex.ru';
+$subject = 'Contact form';
+					</pre>
+
+					<h4>If Contact form form not working</h4>
+					<p>You need to check is PHP mail() function working.</p>
+
+					<?php
+						mail('you@yourmail.com','Test mail','The mail function is working!');
+						echo 'Mail sent!';
+					?>
+					<ul>
+					<li>Save this code as mailtest.php</li>
+						<li>change you@yourmail.com to your e-mail address</li>
+						<li>upload mailtest.php to your server</li>
+						<li>open mailtest.php in your browser (http://yourwebsite.com/mailtest.php)</li>
+						<li>check your inbox to see if a test message arrived.</li>
+					</ul>
+					<strong>If it works:</strong>
+
+					<ul>
+						<li>double-check your form script for errors (like e-mail address misspelling)</li>
+						<li>use the same e-mail address as your form recipient</li>
+						<li>double-check your SPAM filters and SPAM/Junk/Bulk mailboxes</li>
+					</ul>
+
+					<strong>If it not</strong>
+
+					<p>Contact your host and ask them to check PHP mail() setting.</p>
+
+
+					<h2 id="maps">Google Maps</h2>
+					<p>Open the file assets/js/custom.js and it with your data:</p>
+
+					<pre class="prettyprint lang-js">
+/* ---------------------------------------------- /*
+ * Google Map
+/* ---------------------------------------------- */
+
+var mapLocation = new google.maps.LatLng(34.031428,-118.2071542,17);
+					</pre>
+
+
+
+					<h2 id="plugins">Plugins settings</h2>
+					<p>All plugins setting is in file "assets/js/custom.js"</p>
+					<ul>
+						<li><a href="https://github.com/bas2k/jquery.appear/">Appear</a> - Progress bars, CountTo</li>
+						<li><a href="http://www.thepetedesign.com/demos/jquery_super_simple_text_rotator_demo.html">Text rotator</a></li>
+						<li><a href="http://reactiveraven.github.io/jqBootstrapValidation/">Form validator</a></li>
+						<li><a href="https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties">FlexSlider</a> - Sliders</li>
+						<li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific-popup</a> - Modal window, gallery, modal video</li>
+						<li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer">Video background</a></li>
+					</ul>
+					<p>If you have any questions please feel free to email here&nbsp;web-master72@yandex.ru</p>
+
+
+
+					<h2 id="changelog">Changelog</h2>
+
+					<p> Version 1.0</p>
+					<ul>
+						<li>- Initial Release</li>
+					</ul>
+
+					<p> Version 1.1</p>
+					<ul>
+						<li>- New: Add 2 New portfolio single pages</li>
+						<li>- Changed: New demo images</li>
+					</ul>
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Javascript files -->
+	<!-- jQuery -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!--HL -->
+	<script src="assets/js/prettify/prettify.js"></script>
+	<!-- Custom scripts -->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
