@@ -33,39 +33,7 @@
 	</div>
 	<!-- /PRELOADER -->
 
-	<!-- NAVIGATION -->
-	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-
-			<div class="container">
-		
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><img src="assets/images/hall-street.png" alt="Hall Street"></a>
-				</div>
-		
-				<div class="collapse navbar-collapse" id="custom-collapse">
-		
-					<ul class="nav navbar-nav navbar-right">
-		
-						<li class="dropdown">
-							<a href="/">Home</a>
-						</li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-		
-					</ul>
-				</div>
-		
-			</div>
-
-	</nav>
-	<!-- /NAVIGATION -->
+	<?php include('assets/php/includes/navigation.html');?>
 
 	<!-- WRAPPER -->
 	<div class="wrapper">
@@ -485,76 +453,7 @@
 		<hr class="divider-w">
 		<!-- /DIVIDER -->
 
-		<!-- CONTACT -->
-		<section class="module-small">
-		
-			<div class="container">
-		
-				<div class="row">
-		
-					<!-- CONTENT BOX -->
-					<div class="col-sm-4">
-						<div class="content-box">
-							<div class="content-box-icon">
-								<span class="icon-map-pin"></span>
-							</div>
-							<div class="content-box-title font-inc">
-								007 Steet, City, USA
-							</div>
-						</div>
-					</div>
-					<!-- /CONTENT BOX -->
-		
-					<!-- CONTENT BOX -->
-					<div class="col-sm-4">
-						<div class="content-box">
-							<div class="content-box-icon">
-								<span class="icon-phone"></span>
-							</div>
-							<div class="content-box-title font-inc">
-								+1 234 567 89 00
-							</div>
-						</div>
-					</div>
-					<!-- /CONTENT BOX -->
-		
-					<!-- CONTENT BOX -->
-					<div class="col-sm-4">
-						<div class="content-box">
-							<div class="content-box-icon">
-								<span class="icon-envelope"></span>
-							</div>
-							<div class="content-box-title font-inc">
-								semantic@email.com
-							</div>
-						</div>
-					</div>
-					<!-- /CONTENT BOX -->
-		
-				</div>
-		
-			</div>
-		
-		</section>
-		<!-- /CONTACT -->
-
-		<!-- FOOTER -->
-		<footer class="footer">
-		
-			<div class="container">
-		
-				<div class="row">
-		
-					<div class="col-sm-12 text-center">
-						<p class="copyright font-inc m-b-0">© 2015 <a href="index.html">SEMANTIC</a>, All Rights Reserved.</p>
-					</div>
-		
-				</div>
-		
-			</div>
-		
-		</footer>
-		<!-- /FOOTER -->
+		<?php include('assets/php/includes/footer.php');?>
 
 	</div>
 	<!-- /WRAPPER -->
