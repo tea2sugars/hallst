@@ -2,14 +2,103 @@
 Project: Semantic
 Place here your custom CSS styles
 ------------------------------------------------------------------ */
+body {background: #f7f7f7;
+	
+}
+
+.wrapper {background: #f7f7f7;}
+
+.footer {
+	background: #e3e3e3;
+}
 
 .btn-primary {
 	background-color:#a7956e; 
 	border: none; 
-
+	color: white !important;
+	font-weight: bold;
 	}
+	
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+	background-color:#6D5E3E; 
+	color: white !important;
+
+}
+
+a {
+	color:#a7956e;
+	font-weight: bold;
+}
+
+a:hover. a:visited, a:active {
+	color:#6D5E3E;
+}
 	
 .btn.btn-lg {
 	font-weight: bold; 
 	font-size: 16px;
 	}
+	
+.hs-title-size-3 {
+	font-size:75px;
+	font-weight: 700;
+	line-height: 75px;
+	letter-spacing: normal;
+}
+
+.text-columns {
+    margin-bottom: 40px;
+}
+
+.text-columns p {
+	margin-bottom:20px;
+	}
+	
+@media (min-width: 768px) {
+	.text-columns {
+		-webkit-column-count: 3; /* Chrome, Safari, Opera */
+		-moz-column-count: 3; /* Firefox */
+		column-count: 3;
+		}
+	.text-columns p {
+	margin-bottom:0px;
+	}
+}
+
+.text-columns-2 {
+    margin-bottom: 40px;
+}
+
+.text-columns-2 p {
+	margin-bottom:20px;
+	}
+	
+@media (min-width: 768px) {
+	.text-columns-2 {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+		}
+	.text-columns-2 p {
+	margin-bottom:0px;
+	}
+}
+
+.divider-g {
+	border-top: 1px dashed #a7956e;
+	margin:0;
+}
+
+.navbar-custom {
+	font-family: "Montserrat", sans-serif !important;
+}
+
+
+/*.post {
+	background: white;
+	padding-bottom: 10px;
+}
+
+.post p, .post h2 {
+	margin: 0 10px 0 10px;
+}*/

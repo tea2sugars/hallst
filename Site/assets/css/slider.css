@@ -23,7 +23,7 @@ General Styles
 	margin:0;
 }
 
-.flex-direction-nav .flex-prev {
+/*.flex-direction-nav .flex-prev {
 	opacity: 0;
 	left: 0;
 	cursor: url(../images/prev-light.png), e-resize;
@@ -34,6 +34,7 @@ General Styles
 	right: 0;
 	cursor: url(../images/next-light.png), e-resize;
 }
+*/
 
 .flex-control-nav {
 	position: absolute;
@@ -48,7 +49,6 @@ General Styles
 	     -o-transform: translateX(-50%);
 	        transform: translateX(-50%);
 }
-
 .flex-control-nav > li {
 	display: inline-block;
 	margin: 5px 3px;
