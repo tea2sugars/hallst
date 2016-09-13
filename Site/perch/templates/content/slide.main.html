@@ -1,0 +1,32 @@
+<!-- SLIDE -->
+<li class="bg-dark">
+
+	<div class="slidebg slide-zoom" style="background-image:url(<perch:content id="slide_image" type="image" label="Slide Image" bucket="homepage-slides" width="1920px" height="1280px" crop="true" label="Slide main image"/>)"></div>
+
+	<div class="hs-caption container">
+		<div class="caption-content">
+			<perch:if exists="slide_content_image">
+				<div class="hs-title-size-3 font-alt m-b-10">
+					<perch:content id="slide_content_image" type="image" label="Slide logo, etc" bucket="slide-assets"/>
+				</div>
+			</perch:if>
+			
+			<perch:if exists="slide_title">
+				<div class="hs-title-size-3 font-alt m-b-10">
+					<perch:content id="slide_title" type="text" label="Slide title" html="true"/>
+				</div>
+			</perch:if>
+			
+			<div class="hs-title-size-1 font-alt">
+				<strong><perch:content id="slide_subtitle" type="text" label="Slide Subtitle" html="true"/></strong>
+				<perch:if exists="hp_slide_link">
+					<br/>
+					<a href="<perch:content id="hp_slide_link" type="text" label="Link" help="You should create the page first then add the url of that page here"/>" class="btn btn-primary btn-round btn-lg m-t-20 section-scroll"><perch:content id="slide_button_copy" type="text" label="Slide Button Text" html="true"/></a>
+				</perch:if>
+				
+			</div>
+		</div>
+	</div>
+
+</li>
+<!-- /SLIDE -->

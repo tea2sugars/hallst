@@ -1,0 +1,18 @@
+<!-- POST ITEM -->
+<div class="col-sm-6 col-md-4 col-lg-4">
+	
+	<div class="post">
+		<a href="<perch:content id="brand_link" type="text" label="Link location" help="Create the blog post first then copy and paste the url here"/>">
+			<div class="post-thumbnail">
+				<perch:content id="brand_image" type="image" label="Brand Image" bucket="brand-images" width="400px" height="290px" crop="true" alt="<perch:content id="brand_name"/>"/>
+			</div>
+			<div class="post-header">
+				<h2 class="post-title font-alt"><perch:content id="brand_name" type="text" label="Brand Name"/></h2>
+			</div>
+			<div class="post-entry">
+				<p><perch:content id="brand_description" type="text" label="Brand Description"/></p>
+			</div>
+		</a>
+	</div>
+</div>
+<!-- /POST ITEM -->

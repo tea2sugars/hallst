@@ -1,3 +1,4 @@
+<?php include('perch/runtime.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
-	<title>Hall Street</title>
+	<title><?php perch_pages_title(); ?></title>
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,67 +61,8 @@
 		<div class="hero-slider">
 			<ul class="slides">
 				
-				<!-- SLIDE -->
-				<li class="bg-dark">
-
-					<div class="slidebg slide-zoom" style="background-image:url(assets/images/hall-street-header.jpg)"></div>
-
-					<div class="hs-caption container">
-						<div class="caption-content">
-							<div class="hs-title-size-3 font-alt m-b-10">
-								<img src="assets/images/hall-street-logo.png" alt="hall-street-logo">
-							</div>
-							<div class="hs-title-size-1 font-alt">
-								<strong>At Long Melford &amp; Hadleigh</strong><br/>
-								<a href="#stores" class="btn btn-primary btn-round btn-lg m-t-20 section-scroll">Find Us</a>
-							</div>
-						</div>
-					</div>
-
-				</li>
-				<!-- /SLIDE -->
-
-				<!-- SLIDE -->
-				<li class="bg-dark">
-
-					<div class="slidebg slide-zoom" style="background-image:url(assets/images/hadleigh-gant-room.jpg)"></div>
-
-					<div class="hs-caption container">
-						<div class="caption-content">
-							<div class="hs-title-size-3 font-alt m-b-10">
-								Hadleigh Refit
-							</div>
-							<div class="hs-title-size-1 font-alt">
-								<strong>We've made some changes to our Hadleigh store</strong><br/>
-								<!--<a href="#" class="btn btn-primary btn-round btn-lg m-t-20">View more</a>-->
-							</div>
-						</div>
-					</div>
-
-				</li>
-				<!-- /SLIDE -->
-
-				<!-- SLIDE -->
-				<li class="bg-dark">
-
-					<div class="slidebg slide-zoom" style="background-image:url(assets/images/summer-collection-banner.jpg)"></div>
-
-					<div class="hs-caption container">
-						<div class="caption-content">
-							<div class="hs-title-size-3 font-alt m-b-10">
-								Summer Collection
-							</div>
-							<div class="hs-title-size-1 font-alt">
-								<strong>In store now</strong>
-							</div>
-						</div>
-					</div>
-
-				</li>
-				<!-- /SLIDE -->
-
+				<?php perch_content('slide.main');?>
 				
-
 			</ul>
 		</div>
 
@@ -139,17 +81,11 @@
 				<div class="row" >
 
 
-					<h2 class="font-alt align-center">Quality. Simple. Trust.</h2>
+					<h2 class="font-alt align-center"><?php perch_content('main_page_title');?></h2>
 					<div class="col-sm-12 col-md-10 col-md-offset-1">
-						<h4 class="align-center">These are 3 words that sum up “Hall Street” and the values we live by.</h4>
+						<h4 class="align-center"><?php perch_content('main_page_subtitle');?></h4>
 							<div class="text-columns">
-								
-								<p>Hall Street is a traditional “bricks and mortar” retailer serving Suffolk men and women business casual and leisurewear, wholly owned by Ian Beddis and Sean Garnham.</p>
-								
-								<p>The highest quality is offered in all aspects from service to product and without compromise. We work to understand our clients and offer them a classic approach that's flexible and clear. This helps us build reliable foundations which our clients can depend on and trust.</p>
-							
-								<p> Our approach to customers is warm and friendly – we deliver on the values above and reward our customers with an experience that they can value, something of a scarcity in this digital age of retail. </p>
-								<p>Hall Street has been awarded Suffolk’s Heartland Partner for the Gant brand, it’s ‘go-to retailer’ - offering both menswear, women’s clothing and footwear. Each of our brand partners have been selected to align to the Hall Street customer with a reliable, classic quality to it's identity.</p>
+								<?php perch_content('main_page_copy');?>
 							</div>
 					</div>
 					
@@ -172,165 +108,11 @@
 		<section class="module-small" id="brands">
 
 			<div class="container">
-					<h2 class="font-alt align-center">Our Brands</h2>
+				<h2 class="font-alt align-center">Our Brands</h2>
 
 				<div class="row multi-columns-row post-columns">
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/gant-listing.jpg" alt="Gant">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Gant</h2>
-							</div>
-							<div class="post-entry">
-								<p>Established in 1949, Gant is a lifestyle brand with an American Sportswear Heritage.</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/gant-women-listing-new.jpg" alt="Gant Women">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Gant Women</h2>
-							</div>
-							<div class="post-entry">
-								<p>Relaxed American style with a hint of European sophistication.</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/eden-park-listing.jpg" alt="Eden Park">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Eden Park</h2>
-							</div>
-							<div class="post-entry">
-								<p>Created by French rugby internationals, Eden Park is now a leading fashion brand.</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/timberland-listing.jpg" alt="Timberland">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Timberland</h2>
-							</div>
-							<div class="post-entry">
-								<p>Timberland is committed to "Doing Well and Doing Good" by delivering world-class products.</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/henri-lloyd-listing.jpg" alt="Henri Lloyd">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Henri Lloyd</h2>
-							</div>
-							<div class="post-entry">
-								<p>Henri Lloyd, the original British sailing brand was founded in Manchester, England by Henri Strzelecki MBE</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/sand-listing.jpg" alt="Sand">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Sand</h2>
-							</div>
-							<div class="post-entry">
-								<p>The design of the Danish Fashion house SAND Copenhagen is driven by passion, creativity and innovation.</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/Z.jpg" alt="Chatham">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Chatham</h2>
-							</div>
-							<div class="post-entry">
-								<p>A British brand trading on its nautical heritage</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/Z-1.jpg" alt="Crew Clothing">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Crew Clothing</h2>
-							</div>
-							<div class="post-entry">
-								<p>Established in 1949, Gant is a lifestyle brand with an American Sportswear Heritage.</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					<!-- POST ITEM -->
-					<div class="col-sm-6 col-md-4 col-lg-4">
-						
-						<div class="post">
-							<div class="post-thumbnail">
-								<img src="assets/images/vouchers.jpg" alt="Gift Vouchers">
-							</div>
-							<div class="post-header">
-								<h2 class="post-title font-alt">Gift Vouchers</h2>
-							</div>
-							<div class="post-entry">
-								<p>Personalised Gift Vouchers</p>
-							</div>
-					
-						</div>
-					</div>
-					<!-- /POST ITEM -->
-					
-								</div>
+					<?php perch_content('brands');?>
+				</div>
 
 			</div>
 			
@@ -346,14 +128,10 @@
 					<h2 class="font-alt align-center">Our Stores</h2>
 					
 							<div class="col-sm-12 col-md-10 col-md-offset-1">
-								<h4 class="align-center">The Home of the Suffolk Man &amp; Woman</h4>
+								<h4 class="align-center"><?php perch_content('stores_subtitle');?></h4>
 									<div class="text-columns-2">
+										<?php perch_content('stores_copy');?>
 										
-										<p>Hall Street welcomes new customers from across East Anglia including Bury St. Edmunds, Ipswich, Woodbridge, Colchester, Sudbury, Southwold, Aldeburgh, Framlingham, Thetford, Diss, Norwich and Cambridge. </p>
-		
-										<p>Based in Long Melford and Hadleigh, both desired locations to live and visit. Each boasts strong tourist and consumer offerings of shopping, dining and exploring.</p>
-		
-										<p>Customer convenience is strategic to Hall Street – with free parking outside, perusing within a relaxed laid-back environment is stark contrast to nearby town centres.</p>
 									</div>
 							</div>
 				</div>
@@ -364,7 +142,7 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="post">
 							<div class="post-thumbnail">
-								<img src="assets/images/longmelford.jpg" alt="Hall Street - Long Melford">
+								<?php perch_content('longmelford.store');?>
 							</div>
 							<div class="post-header">
 								<h2 class="post-title font-alt">Long Melford</h2>
@@ -410,7 +188,7 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="post">
 							<div class="post-thumbnail">
-								<img src="assets/images/hadleigh.jpg" alt="Hall Street - Hadleigh">
+								<?php perch_content('hadleigh.store');?>
 							</div>
 							<div class="post-header">
 								<h2 class="post-title font-alt">Hadleigh</h2>
