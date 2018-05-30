@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
-	<title>Semantic - Minimal portfolio template</title>
+	<title>Gallery</title>
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,14 @@
 	<!-- Custom css -->
 	<link href="assets/css/custom.css" rel="stylesheet">
 	
-	<script>
+	<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel='stylesheet' type='text/css'>
+    
+    <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -35,115 +42,27 @@
 	  ga('send', 'pageview');
 	
 	</script>
+    
 </head>
 <body>
 
 	<!-- PRELOADER -->
 	<div class="page-loader">
-		<div class="loader">Loading...</div>
+		<div class="loader">Dressing...</div>
 	</div>
 	<!-- /PRELOADER -->
 
 	<?php include('assets/php/includes/navigation.html');?>
 
 	<!-- HOME -->
-	<section id="home" class="module-hero module-parallax module-fade bg-dark-50" data-background="assets/images/section-1.jpg">
+	<section id="gallery">
 
-		<div class="hs-caption container">
-			<div class="caption-content">
-				<div class="hs-title-size-3 font-alt m-b-20">
-					Project name
-				</div>
-				<div class="hs-title-size-1 font-inc">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean<br> commodo ligula eget dolor. Aenean massa.
-				</div>
-			</div>
-		</div>
 
-	</section >
-	<!-- /HOME -->
-
-	<!-- WRAPPER -->
-	<div class="wrapper">
-
-		<!-- PORTFOLIO DESCRIPTION -->
-		<section class="module-small">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-sm-6">
-
-						<div class="work-details">
-							<h3 class="work-details-title font-alt">Description</h3>
-							<ul>
-								<li class="font-inc"><strong>Client: </strong>SomeCompany</li>
-								<li class="font-inc"><strong>Date: </strong>23 November, 2015</li>
-								<li class="font-inc"><strong>Online: </strong><a href="#" target="_blank">www.example.com</a></li>
-							</ul>
-						</div>
-
-					</div>
-
-					<div class="col-sm-6">
-						<p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
-						<p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
-		<!-- /PORTFOLIO DESCRIPTION -->
-
-		<!-- PORTFOLIO CONTENT -->
-		<section class="module p-t-0 p-b-0">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-sm-12">
-
-						<div class="post-images-slider">
-							<ul class="slides">
-								<li><img src="assets/images/section-1.jpg" alt=""></li>
-								<li><img src="assets/images/section-2.jpg" alt=""></li>
-								<li><img src="assets/images/section-3.jpg" alt=""></li>
-							</ul>
-						</div>
-
-					</div>
-
-				</div><!-- .row -->
-
-			</div>
-
-		</section>
-		<!-- /PORTFOLIO CONTENT -->
-
-		<!-- PAGINATION -->
-		<section class="module-small p-t-50">
-
-			<div class="container">
 			
-				<div class="pagination font-inc text-uppercase">
-			
-					<a href="#"><i class="fa fa-angle-left"></i> Prev</a>
-					<a href="#">All works</a>
-					<a href="#">Next <i class="fa fa-angle-right"></i></a>
-			
-				</div>
-			
-			</div>
-
-		</section>
-		<!-- /PAGINATION -->
+	</section>
 
 		<!-- DIVIDER -->
-		<hr class="divider-w">
+		<hr class="divider-g">
 		<!-- /DIVIDER -->
 
 		<?php include('assets/php/includes/footer.html');?>
