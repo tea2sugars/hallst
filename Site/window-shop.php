@@ -24,6 +24,8 @@
 	
 	<!-- Custom css -->
 	<link href="assets/css/custom.css" rel="stylesheet">
+	<link href="assets/css/shop-window.css" rel="stylesheet">
+
 	
 	<!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -47,7 +49,7 @@
     
 </head>
 <body id="gallery">
-	<!-- PRELOADER -->
+	<!-- PRELOADER 
 	<div class="page-loader">
 		<div class="loader">Dressing...</div>
 	</div>
@@ -99,43 +101,13 @@
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
-		<section class="cd-gallery container">
+		<section class="cd-gallery">
 			<form>
-				<div class="form-group" id="gallery-fixed-form-group">
-					<div class="form-item-inline">
-						<label for="name">Name: </label>
-						<input type="text" id="name" />
-					</div>
-					<div class="form-item-inline">
-						<label for="email">Email: </label>
-						<input type="email" id="email" />
-					</div>
-					<div class="form-item-inline">
-						<label for="date">Date: </label>
-						<input type="date" id="date"/>
-					</div>
-					<div class="form-item-inline">
-						<label for="waist">Waist Size: </label>
-						<input type="number" id="waist"/>
-					</div>
-					<div class="form-item-inline">
-						<label for="top">Top Size: </label>
-						<input type="number" id="top"/>
-					</div>
-					<div class="form-item-inline">
-						<label for="shoe-size">Shoe Size: </label>
-						<input type="number" id="shoe"/>
-					</div>
-					<div class="form-item-inline">
-						<input type="submit" id="submit" />
-					</div>
-				</div>
-				
 				<div class="form-group">
 					<ul>
 						<li class="mix color-1 check1 radio2 option3">
 							<input type="checkbox" id="cb1" />
-						    <label for="cb1"><img src="assets/images/img-1.jpg" alt="Image 1"><span class="post-title font-alt">Image title</span><p>Description goes here</p></label>
+						    <label for="cb1"><img src="assets/images/img-1.jpg" alt="Image 1"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-2 check2 radio2 option2">
 							<input type="checkbox" id="cb2" />
@@ -173,84 +145,41 @@
 					</ul>
 				</div>
 				<div class="cd-fail-message">No results found</div>
-				
+				<div class="form-group" id="gallery-fixed-form-group">
+					<div class="form-item-inline">
+						<label for="name">Your Name: </label>
+						<input type="text" id="name" />
+					</div>
+					<div class="form-item-inline">
+						<label for="email">Email Address: </label>
+						<input type="email" id="email" />
+					</div>
+					<div class="form-item-inline">
+						<label for="date">Appointment Date: </label>
+						<input type="date" id="date"/>
+					</div>
+					<div class="form-item-inline">
+						<label for="waist">Waist Size: </label>
+						<input type="number" id="waist"/>
+						inches
+					</div>
+					<div class="form-item-inline">
+						<label for="top">Top Size: </label>
+						<input type="number" id="top"/>
+					</div>
+					<div class="form-item-inline">
+						<label for="shoe-size">Shoe Size: </label>
+						<input type="number" id="shoe"/>
+						UK
+					</div>
+					<div class="form-item-inline">
+						<input type="submit" id="submit" value="Send Request" />
+					</div>
+				</div>
 					
 			</form>
 		</section> <!-- cd-gallery -->
 
-		<div class="cd-filter">
-			<form>
-				<div class="cd-filter-block">
-					<h4>Search</h4>
-					
-					<div class="cd-filter-content">
-						<input type="search" placeholder="Try color-1...">
-					</div> <!-- cd-filter-content -->
-				</div> <!-- cd-filter-block -->
-
-				<div class="cd-filter-block">
-					<h4>Check boxes</h4>
-
-					<ul class="cd-filter-content cd-filters list">
-						<li>
-							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-			    			<label class="checkbox-label" for="checkbox1">Option 1</label>
-						</li>
-
-						<li>
-							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-							<label class="checkbox-label" for="checkbox2">Option 2</label>
-						</li>
-
-						<li>
-							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-							<label class="checkbox-label" for="checkbox3">Option 3</label>
-						</li>
-					</ul> <!-- cd-filter-content -->
-				</div> <!-- cd-filter-block -->
-
-				<div class="cd-filter-block">
-					<h4>Select</h4>
-					
-					<div class="cd-filter-content">
-						<div class="cd-select cd-filters">
-							<select class="filter" name="selectThis" id="selectThis">
-								<option value="">Choose an option</option>
-								<option value=".option1">Option 1</option>
-								<option value=".option2">Option 2</option>
-								<option value=".option3">Option 3</option>
-								<option value=".option4">Option 4</option>
-							</select>
-						</div> <!-- cd-select -->
-					</div> <!-- cd-filter-content -->
-				</div> <!-- cd-filter-block -->
-
-				<div class="cd-filter-block">
-					<h4>Radio buttons</h4>
-
-					<ul class="cd-filter-content cd-filters list">
-						<li>
-							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-							<label class="radio-label" for="radio1">All</label>
-						</li>
-
-						<li>
-							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-							<label class="radio-label" for="radio2">Choice 2</label>
-						</li>
-
-						<li>
-							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-							<label class="radio-label" for="radio3">Choice 3</label>
-						</li>
-					</ul> <!-- cd-filter-content -->
-				</div> <!-- cd-filter-block -->
-			</form>
-
-			<a href="#0" class="cd-close">Close</a>
-		</div> <!-- cd-filter -->
-
-		<a href="#0" class="cd-filter-trigger">Filters</a>
 	</main> <!-- cd-main-content -->
 	
 	<!-- DIVIDER -->
