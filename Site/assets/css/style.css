@@ -1826,7 +1826,6 @@ xgallery
 }
 .cd-gallery li {
   margin-bottom: 1.6em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   display: none;
 }
 .cd-gallery li.gap {
@@ -2177,7 +2176,7 @@ xcustom form elements
   /* check mark style for check boxes */
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-check.svg") no-repeat center center;
+  background: url("../images/cd-icon-check.svg") no-repeat center center;
 }
 .cd-filter-block .radio-label::before,
 .cd-filter-block .radio-label::after {
@@ -2221,7 +2220,7 @@ input[type="checkbox"][id^="cb"] {
 }
 
 label {
-  border: 1px solid #fff;
+  border: none;
   padding: 10px;
   display: block;
   position: relative;
@@ -2242,7 +2241,7 @@ label:before {
   width: 25px;
   height: 25px;
   text-align: center;
-  line-height: 28px;
+  line-height: 30px;
   transition-duration: 0.4s;
   transform: scale(0);
 }
@@ -2255,18 +2254,17 @@ label img {
 }
 
 :checked + label {
-  border-color: #ddd;
 }
 
 :checked + label:before {
-  content: "/";
-  background-color: grey;
+  content: url(../images/cd-icon-check.svg);
+  background-color: #ae9c78;
   transform: scale(1);
 }
 
 :checked + label img {
-  transform: scale(0.9);
-  box-shadow: 0 0 5px #333;
+  transform: scale(0.95);
+  outline: 1px solid #ae9c78;
   z-index: -1;
 }
 
@@ -2318,11 +2316,18 @@ label img {
 #gallery-fixed-form-group {
 	background: white;
 	width: 100%;
-	display: flex;
+	-ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 #gallery-fixed-form-group .form-item-inline {
-	width:15%;
-	float:left;
-	flex-basis: 100%;
+	width:200px;
+	
 }

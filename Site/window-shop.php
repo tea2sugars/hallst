@@ -67,10 +67,10 @@
 
 					<div class="col-sm-6 col-sm-offset-3">
 
-						<h1 class="module-title font-alt align-center">Blog grid</h1>
+						<h1 class="module-title font-alt align-center">Our Shop Window</h1>
 
 						<div class="module-subtitle font-inc align-center">
-							A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+							Browse through our latest collections below. If there is anything you fancy you can select the items and make an appointment for trying on in our store. We'll have your size and preferences ready for your visit.
 						</div>
 
 					</div>
@@ -135,36 +135,36 @@
 					<ul>
 						<li class="mix color-1 check1 radio2 option3">
 							<input type="checkbox" id="cb1" />
-						    <label for="cb1"><img src="img/img-1.jpg" alt="Image 1"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb1"><img src="assets/images/img-1.jpg" alt="Image 1"><span class="post-title font-alt">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-2 check2 radio2 option2">
 							<input type="checkbox" id="cb2" />
-						    <label for="cb2"><img src="img/img-2.jpg" alt="Image 2"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb2"><img src="assets/images/img-2.jpg" alt="Image 2"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-1 check3 radio3 option1">
 							<input type="checkbox" id="cb3" />
-						    <label for="cb3"><img src="img/img-3.jpg" alt="Image 3"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb3"><img src="assets/images/img-3.jpg" alt="Image 3"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-1 check3 radio2 option4">
 							<input type="checkbox" id="cb4" />
-						    <label for="cb4"><img src="img/img-4.jpg" alt="Image 4"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb4"><img src="assets/images/img-4.jpg" alt="Image 4"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						
 						<li class="mix color-1 check1 radio2 option3">
 							<input type="checkbox" id="cb5" />
-						    <label for="cb5"><img src="img/img-5.jpg" alt="Image 5"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb5"><img src="assets/images/img-5.jpg" alt="Image 5"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-2 check2 radio2 option2">
 							<input type="checkbox" id="cb6" />
-						    <label for="cb6"><img src="img/img-6.jpg" alt="Image 6"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb6"><img src="assets/images/img-6.jpg" alt="Image 6"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-2 check2 radio2 option2">
 							<input type="checkbox" id="cb7" />
-						    <label for="cb7"><img src="img/img-7.jpg" alt="Image 7"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb7"><img src="assets/images/img-7.jpg" alt="Image 7"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						<li class="mix color-1 check3 radio2 option4">
 							<input type="checkbox" id="cb8" />
-						    <label for="cb8"><img src="img/img-8.jpg" alt="Image 8"><span class="h2">Image title</span><p>Description goes here</p></label>
+						    <label for="cb8"><img src="assets/images/img-8.jpg" alt="Image 8"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						
 						<li class="gap"></li>
