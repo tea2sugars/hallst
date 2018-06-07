@@ -1,3 +1,4 @@
+<?php include('perch/runtime.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +61,7 @@
 	<!-- WRAPPER -->
 	<div class="wrapper">
 	<!-- HOME -->
-		<section class="module module-header bg-dark bg-dark-50" data-background="assets/images/section-7.jpg">
+		<section class="module module-header bg-dark bg-dark-50" data-background="<?php perch_content('gallery_title_image');?>">
 
 			<div class="container">
 
@@ -69,10 +70,12 @@
 
 					<div class="col-sm-6 col-sm-offset-3">
 
-						<h1 class="module-title font-alt align-center">Our Shop Window</h1>
+						<h1 class="module-title font-alt align-center">
+								<?php perch_content('gallery_title');?>
+						</h1>
 
 						<div class="module-subtitle font-inc align-center">
-							Browse through our latest collections below. If there is anything you fancy you can select the items and make an appointment for trying on in our store. We'll have your size and preferences ready for your visit.
+							<?php perch_content('gallery_title_intro');?>
 						</div>
 
 					</div>
@@ -110,40 +113,7 @@
 			<form method="post" name="shop-window-form" action="assets/php/form-to-email.php">
 				<div class="form-group">
 					<ul>
-						<li class="mix shoes">
-							<input type="checkbox" name="item[]" id="cb1" value="cb1" />
-						    <label for="cb1"><img src="assets/images/img-1.jpg" alt="Image 1"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						<li class="mix accessories">
-							<input type="checkbox" name="item[]" id="cb2" value="cb2"/>
-						    <label for="cb2"><img src="assets/images/img-2.jpg" alt="Image 2"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						<li class="mix coats">
-							<input type="checkbox" name="item[]" id="cb3" value="cb3"/>
-						    <label for="cb3"><img src="assets/images/img-3.jpg" alt="Image 3"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						<li class="mix knits">
-							<input type="checkbox" name="item[]" id="cb4" value="cb4"/>
-						    <label for="cb4"><img src="assets/images/img-4.jpg" alt="Image 4"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						
-						<li class="mix shirts">
-							<input type="checkbox" name="item[]" id="cb5" value="cb5"/>
-						    <label for="cb5"><img src="assets/images/img-5.jpg" alt="Image 5"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						<li class="mix jeans trousers">
-							<input type="checkbox" name="item[]" id="cb6" value="cb6"/>
-						    <label for="cb6"><img src="assets/images/img-6.jpg" alt="Image 6"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						<li class="mix trousers">
-							<input type="checkbox" name="item[]" id="cb7" value="cb7"/>
-						    <label for="cb7"><img src="assets/images/img-7.jpg" alt="Image 7"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
-						<li class="mix coats">
-							<input type="checkbox" name="item[]" id="cb8" value="cb8"/>
-						    <label for="cb8"><img src="assets/images/img-8.jpg" alt="Image 8"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>						
-						
+						<?php perch_content('gallery-image');?>
 					</ul>
 				</div>
 				<div class="cd-fail-message">No results found</div>

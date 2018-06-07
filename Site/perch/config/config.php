@@ -3,7 +3,7 @@
 
     define("PERCH_DB_USERNAME", 'hallstr_admin');
     define("PERCH_DB_PASSWORD", 'TopGun');
-    define("PERCH_DB_SERVER", "213.143.20.228");
+    define("PERCH_DB_SERVER", "213.143.3.8");
     define("PERCH_DB_DATABASE", "hallstr_live");
     define("PERCH_DB_PREFIX", "perch2_");
     
@@ -20,3 +20,5 @@
     define('PERCH_RESPATH', PERCH_LOGINPATH . '/resources');
     
     define('PERCH_HTML5', true);
+    define('PERCH_TEMPLATE_FILTERS', true);
+
