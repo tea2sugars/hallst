@@ -85,7 +85,7 @@
 		</section >
 	<!-- /HOME -->
 
-	<main class="cd-main-content">
+	<main class="cd-main-content module-small">
 		<div class="cd-tab-filter-wrapper">
 			<div class="cd-tab-filter">
 				<ul class="cd-filters">
@@ -93,89 +93,151 @@
 						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
 					</li> 
 					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
-					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
-					<li class="filter" data-filter=".option1"><a href="#0" data-type="option-1">Option 1</a></li>
-					<li class="filter" data-filter=".option2"><a href="#0" data-type="option-2">Option 2</a></li>
+					<li class="filter" data-filter=".shoes"><a href="#0" data-type="shoes">Shoes</a></li>
+					<li class="filter" data-filter=".trousers"><a href="#0" data-type="trousers">Trousers</a></li>
+					<li class="filter" data-filter=".jeans"><a href="#0" data-type="jeans">Jeans</a></li>
+					<li class="filter" data-filter=".shirts"><a href="#0" data-type="shirts">Shirts</a></li>
+					<li class="filter" data-filter=".knits"><a href="#0" data-type="knits">Knits</a></li>
+					<li class="filter" data-filter=".coats"><a href="#0" data-type="coats">Coats &amp; Jackets</a></li>
+					<li class="filter" data-filter=".accessories"><a href="#0" data-type="accessories">Accessories</a></li>
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
 		<section class="cd-gallery">
-			<form>
+		<h2 class="text-center">Our Shopping Window</h2>
+		<p class="lead text-center">Please select from our gallery below</p>
+			<form method="post" name="shop-window-form" action="assets/php/form-to-email.php">
 				<div class="form-group">
 					<ul>
-						<li class="mix color-1 check1 radio2 option3">
-							<input type="checkbox" id="cb1" />
+						<li class="mix shoes">
+							<input type="checkbox" name="item[]" id="cb1" value="cb1" />
 						    <label for="cb1"><img src="assets/images/img-1.jpg" alt="Image 1"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
-						<li class="mix color-2 check2 radio2 option2">
-							<input type="checkbox" id="cb2" />
+						<li class="mix accessories">
+							<input type="checkbox" name="item[]" id="cb2" value="cb2"/>
 						    <label for="cb2"><img src="assets/images/img-2.jpg" alt="Image 2"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
-						<li class="mix color-1 check3 radio3 option1">
-							<input type="checkbox" id="cb3" />
+						<li class="mix coats">
+							<input type="checkbox" name="item[]" id="cb3" value="cb3"/>
 						    <label for="cb3"><img src="assets/images/img-3.jpg" alt="Image 3"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
-						<li class="mix color-1 check3 radio2 option4">
-							<input type="checkbox" id="cb4" />
+						<li class="mix knits">
+							<input type="checkbox" name="item[]" id="cb4" value="cb4"/>
 						    <label for="cb4"><img src="assets/images/img-4.jpg" alt="Image 4"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
 						
-						<li class="mix color-1 check1 radio2 option3">
-							<input type="checkbox" id="cb5" />
+						<li class="mix shirts">
+							<input type="checkbox" name="item[]" id="cb5" value="cb5"/>
 						    <label for="cb5"><img src="assets/images/img-5.jpg" alt="Image 5"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
-						<li class="mix color-2 check2 radio2 option2">
-							<input type="checkbox" id="cb6" />
+						<li class="mix jeans trousers">
+							<input type="checkbox" name="item[]" id="cb6" value="cb6"/>
 						    <label for="cb6"><img src="assets/images/img-6.jpg" alt="Image 6"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
-						<li class="mix color-2 check2 radio2 option2">
-							<input type="checkbox" id="cb7" />
+						<li class="mix trousers">
+							<input type="checkbox" name="item[]" id="cb7" value="cb7"/>
 						    <label for="cb7"><img src="assets/images/img-7.jpg" alt="Image 7"><span class="h4">Image title</span><p>Description goes here</p></label>
 						</li>
-						<li class="mix color-1 check3 radio2 option4">
-							<input type="checkbox" id="cb8" />
+						<li class="mix coats">
+							<input type="checkbox" name="item[]" id="cb8" value="cb8"/>
 						    <label for="cb8"><img src="assets/images/img-8.jpg" alt="Image 8"><span class="h4">Image title</span><p>Description goes here</p></label>
-						</li>
+						</li>						
 						
-						<li class="gap"></li>
-						<li class="gap"></li>
-						<li class="gap"></li>
 					</ul>
 				</div>
 				<div class="cd-fail-message">No results found</div>
-				<div class="form-group" id="gallery-fixed-form-group">
-					<div class="form-item-inline">
-						<label for="name">Your Name: </label>
-						<input type="text" id="name" />
+				
+				<article class="white-background">
+					<h3 class="align-center">Your appointment preferences</h3>
+					<div class="form-group" id="gallery-fixed-form-group">
+						<div class="form-item-inline">
+							<label for="name">Your Name: </label>
+							<input type="text" id="name" name="name" />
+						</div>
+						<div class="form-item-inline">
+							<label for="email">Email Address: </label>
+							<input type="text" id="email" name="email" />
+						</div>
+						<div class="form-item-inline">
+							<label for="phone">Phone Number: </label>
+							<input type="text" id="phone" name="phone" />
+						</div>
+						<div class="form-item-inline">
+							<label for="date">Appointment Date: </label>
+							<input type="date" id="date" name="date"/>
+						</div>
+						<div class="form-item-inline">
+							<label for="store">Preferred Store: </label>
+							<select id="store" name="store">
+								<option value="Hadleigh">Hadleigh</option>
+								<option value="Long Melford">Long Melford</option>
+							</select>
+						</div>
+						<div class="form-item-inline">
+							<label for="trouser-size">Trouser Size: </label>
+							<select id="trouser-size" name="trouser-size">
+							  <option value="30Short">30” Short</option>
+							  <option value="30Regular">30” Regular</option>
+							  <option value="30Long">30” Long</option>
+							  
+							  <option value="32Short">32” Short</option>
+							  <option value="32Regular">32” Regular</option>
+							  <option value="32Long">32” Long</option>
+							  
+							  <option value="34Short">34” Short</option>
+							  <option value="34Regular">34” Regular</option>
+							  <option value="34Long">34” Long</option>
+							  
+							  <option value="36Short">36” Short</option>
+							  <option value="36Regular">36” Regular</option>
+							  <option value="36Long">36” Long</option>
+							  
+							  <option value="38Short">38” Short</option>
+							  <option value="38Regular">38” Regular</option>
+							  <option value="38Long">38” Long</option>
+							  
+							  <option value="40Short">40” Short</option>
+							  <option value="40Regular">40” Regular</option>
+							  <option value="40Long">40” Long</option>
+							  
+							  <option value="42Short">42” Short</option>
+							  <option value="42Regular">42” Regular</option>
+							  <option value="42Long">42” Long</option>
+							</select>
+						</div>
+						<div class="form-item-inline">
+							<label for="top">Top Size: </label>
+							<select id="top" name="top">
+							  <option value="S">S</option>
+							  <option value="M">M</option>
+							  <option value="L">L</option>
+							  <option value="XL">XL</option>
+							  <option value="XXL">XXL</option>
+							  <option value="XXXL">XXXL</option>
+							  <option value="XXXXL">XXXXL</option>
+							</select>
+						</div>
+						<div class="form-item-inline">
+							<label for="shoe-size">Shoe Size: </label>
+							<select id="shoe-size" name="shoe-size">
+							  <option value="UK6/40">UK6/40</option>
+							  <option value="UK7/41">UK7/41</option>
+							  <option value="UK8/42">UK8/42</option>
+							  <option value="UK9/43">UK9/43</option>
+							  <option value="UK10/44">UK10/44</option>
+							  <option value="UK11/45">UK11/45</option>
+							  <option value="UK12/46">UK12/46</option>
+							  <option value="UK13/47">UK13/47</option>
+							</select>
+						</div>
+						
 					</div>
-					<div class="form-item-inline">
-						<label for="email">Email Address: </label>
-						<input type="email" id="email" />
-					</div>
-					<div class="form-item-inline">
-						<label for="date">Appointment Date: </label>
-						<input type="date" id="date"/>
-					</div>
-					<div class="form-item-inline">
-						<label for="waist">Waist Size: </label>
-						<input type="number" id="waist"/>
-						inches
-					</div>
-					<div class="form-item-inline">
-						<label for="top">Top Size: </label>
-						<input type="number" id="top"/>
-					</div>
-					<div class="form-item-inline">
-						<label for="shoe-size">Shoe Size: </label>
-						<input type="number" id="shoe"/>
-						UK
-					</div>
-					<div class="form-item-inline">
-						<input type="submit" id="submit" value="Send Request" />
-					</div>
-				</div>
+					<div class="form-item-inline align-center">
+							<input type="submit" id="submit" value="Send Request" />
+							<p class="small">Something goes here regarding data protection and the Privacy Policy</p>
+						</div>
+				</article>
 					
 			</form>
 		</section> <!-- cd-gallery -->

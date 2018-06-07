@@ -223,7 +223,7 @@ xgallery
 
 -------------------------------- */
 .cd-gallery {
-  padding: 26px 2%;
+  padding: 26px 0;
   width: 100%;
 }
 .cd-gallery li {
@@ -246,7 +246,7 @@ xgallery
 }
 @media only screen and (min-width: 768px) {
   .cd-gallery {
-    padding: 40px 3%;
+    padding: 40px 0;
   }
   .cd-gallery ul {
     text-align: justify;
@@ -259,12 +259,13 @@ xgallery
   .cd-gallery li {
     /*width: 48%;*/
     margin-bottom: 2em;
+        float: left;
+
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-gallery {
-    padding: 50px 2%;
-    float: right;
+    padding: 50px 0;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     transition: width 0.3s;
@@ -742,18 +743,61 @@ label img {
 
 .cd-gallery ul li img {
 	border: 5px solid white;
+	margin-bottom: 10px;
 }
 
 .cd-gallery ul li .h4 {
 	font-size: 14px;
 	font-weight: bold;
 	color: #a7956e;
+	
 }
 .cd-gallery ul li p {
 	font-weight: normal;
 }
 
+#gallery-fixed-form-group {
+	background: none;
+	padding: 0 5px 0 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+article.white-background {
+	background: white;
+	padding: 20px 0
+}
+
 #gallery-fixed-form-group .form-item-inline {
-	width:200px;
-	
+	flex: 1;
+}
+#gallery-fixed-form-group .form-item-inline input {
+	height:40px;
+	border: 1px solid #eaeaea;
+}
+
+#gallery-fixed-form-group .form-item-inline label {
+	margin:10px 0 10px 0;
+	padding: 0px;
+	}
+
+input[type=submit] {
+	color: white;
+	background: #ae9c78;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	margin:20px auto;
+}
+
+select {
+	border-radius: 0px;
+	height:40px;
+	background-color: white;
+	border: 1px solid #eaeaea;
+	width:100%;
+	max-width: 130px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	padding-left: 5px;
 }
