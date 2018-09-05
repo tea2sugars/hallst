@@ -62,7 +62,7 @@
 	<main class="cd-main-content module-small">
 		<section class="cd-gallery">
 			<h2 class="text-center">Thank you for your enquiry</h2>
-			<p class="lead text-center">Someone will be in contact with you shortly regarding your appointment</p>
+			<p class="lead text-center">Your choices are subject to stock availability.  We shall be in touch to confirm all details shortly.</p>
 		</section> <!-- cd-gallery -->
 
 	</main> <!-- cd-main-content -->

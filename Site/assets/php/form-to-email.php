@@ -11,6 +11,7 @@ $date = $_POST['date'];
 $store = $_POST['store'];
 $item = $_POST['item'];
 $date = $_POST['date'];
+$time = $_POST['time'];
 $top = $_POST['top'];
 $trousersize = $_POST['trouser-size'];
 $shoesize = $_POST['shoe-size'];
@@ -37,7 +38,7 @@ $email_subject = "New Window Shop submission";
 $email_body = "You have received a new message from the user $name\n".
     "Their Email Address:\n $visitor_email\n\n".
     "Their Phone Number:\n $phone\n\n".
-    "They would like an appointment on this date:\n $date\n\n".
+    "They would like an appointment at $time on this date:\n $date\n\n".
     "At the $store store\n\n".
     "Their Preferences are:\n\n".
     "Trouser Size:\n $trousersize\n\n".
@@ -45,7 +46,7 @@ $email_body = "You have received a new message from the user $name\n".
     "Shoe Size:\n $shoesize\n\n".
     "Items Interested in:\n$item\n".
    
-$to = "richard.barwick@googlemail.com";//<== update the email address
+$to = "sean@hall-street.co.uk";//<== update the email address
 $headers .= "MIME-Version: 1.0\r\n";
 //Set the content-type to html
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";

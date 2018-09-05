@@ -93,6 +93,8 @@ a:hover. a:visited, a:active {
 	font-family: "Montserrat", sans-serif !important;
 }
 
+.pagination {display:none;}
+
 
 /*.post {
 	background: white;

@@ -661,13 +661,13 @@ label img {
 
 :checked + label:before {
   content: url(../images/cd-icon-check.svg);
-  background-color: #ae9c78;
-  transform: scale(1);
+  background-color: #8B0000;
+  transform: scale(1.2);
 }
 
 :checked + label img {
   transform: scale(0.95);
-  outline: 1px solid #ae9c78;
+  outline: 1px solid #8B0000;
   z-index: -1;
 }
 
@@ -770,6 +770,7 @@ article.white-background {
 
 #gallery-fixed-form-group .form-item-inline {
 	flex: 1;
+	padding: 0 2px;
 }
 #gallery-fixed-form-group .form-item-inline input {
 	height:40px;

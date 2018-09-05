@@ -222,23 +222,7 @@
 		</section>
 		<!-- /BLOG GRID -->
 
-		<!-- PAGINATION -->
-		<section class="module-small p-t-10">
-
-			<div class="container">
-			
-				<div class="pagination font-inc text-uppercase">
-			
-					<a href="#"><i class="fa fa-angle-left"></i> Prev</a>
-					<a href="#">Next <i class="fa fa-angle-right"></i></a>
-			
-				</div>
-			
-			</div>
-
-		</section>
-		<!-- /PAGINATION -->
-
+		
 		<!-- DIVIDER -->
 		<hr class="divider-w">
 		<!-- /DIVIDER -->

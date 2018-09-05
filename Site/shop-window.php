@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
-	<title>Gallery</title>
+	<title>Hall Street - Browse our Shop Window</title>
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,7 +61,7 @@
 	<!-- WRAPPER -->
 	<div class="wrapper">
 	<!-- HOME -->
-		<section class="module module-header bg-dark bg-dark-50" data-background="<?php perch_content('gallery_title_image');?>">
+		<section class="module module-header bg-dark bg-dark-50" <?php perch_content('gallery_title_image');?>>
 
 			<div class="container">
 
@@ -97,19 +97,21 @@
 					</li> 
 					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
 					<li class="filter" data-filter=".shoes"><a href="#0" data-type="shoes">Shoes</a></li>
-					<li class="filter" data-filter=".trousers"><a href="#0" data-type="trousers">Trousers</a></li>
-					<li class="filter" data-filter=".jeans"><a href="#0" data-type="jeans">Jeans</a></li>
+					<li class="filter" data-filter=".jeans_and_trousers"><a href="#0" data-type="trousers">Jeans &amp; Trousers</a></li>
 					<li class="filter" data-filter=".shirts"><a href="#0" data-type="shirts">Shirts</a></li>
-					<li class="filter" data-filter=".knits"><a href="#0" data-type="knits">Knits</a></li>
+					<li class="filter" data-filter=".knitwear"><a href="#0" data-type="knitwear">Knitwear</a></li>
 					<li class="filter" data-filter=".coats"><a href="#0" data-type="coats">Coats &amp; Jackets</a></li>
 					<li class="filter" data-filter=".accessories"><a href="#0" data-type="accessories">Accessories</a></li>
+					<li class="filter" data-filter=".new"><a href="#0" data-type="new">New Arrivals</a></li>
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
 		<section class="cd-gallery">
-		<h2 class="text-center">Our Shopping Window</h2>
-		<p class="lead text-center">Please select from our gallery below</p>
+		<h2 class="text-center"><?php perch_content('gallery-second-title');?></h2>
+		<div style="max-width:900px; margin:0 auto;">
+			<p class="text-center"><?php perch_content('gallery-second-instructions');?></p>
+		</div>
 			<form method="post" name="shop-window-form" action="assets/php/form-to-email.php">
 				<div class="form-group">
 					<ul>
@@ -136,6 +138,10 @@
 						<div class="form-item-inline">
 							<label for="date">Appointment Date: </label>
 							<input type="date" id="date" name="date"/>
+						</div>
+						<div class="form-item-inline">
+							<label for="time">Time: </label>
+							<input type="text" id="time" name="time"/>
 						</div>
 						<div class="form-item-inline">
 							<label for="store">Preferred Store: </label>
@@ -205,7 +211,7 @@
 					</div>
 					<div class="form-item-inline align-center">
 							<input type="submit" id="submit" value="Send Request" />
-							<p class="small">Something goes here regarding data protection and the Privacy Policy</p>
+							<p class="small">Hall Street will retain the following information for future reference when liaising with you - your contact details as supplied, your size and item preferences.<br/>We will never share this information with any other individual or organisation outside of Robert Anthony of Suffolk Limited (trading as Hall Street).<br/>Should you have any concerns please feel to comment.</p>
 						</div>
 				</article>
 					
