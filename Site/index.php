@@ -83,18 +83,35 @@
 
 					<h2 class="font-alt align-center"><?php perch_content('main_page_title');?></h2>
 					<div class="col-sm-12 col-md-10 col-md-offset-1">
-						<h4 class="align-center"><?php perch_content('main_page_subtitle');?></h4>
+							<h4 class="align-center"><?php perch_content('main_page_subtitle');?></h4>
 							<div class="text-columns">
 								<?php perch_content('main_page_copy');?>
+								
+							</div>
+							<div class="align-center" style="margin-top:20px; margin-bottom:20px;">
+								<a href="#stores" class="btn btn-primary btn-round btn-lg section-scroll">Find Us</a>
 							</div>
 					</div>
-					
-					<div class="row">
-						<div class="align-center">
-							<a href="#stores" class="btn btn-primary btn-round btn-lg section-scroll">Find Us</a>
-						</div>
-					</div>
+				</div>
+			</div>
+		</section>
+		
+				
+		<!-- DIVIDER -->
+		<hr class="divider-g">
+		<!-- /DIVIDER -->
+				
+		<section class="module-small" id="video">
 
+			<div class="container">
+
+				<div class="row" >
+						<div class="align-center">
+							<h2 class="font-alt align-center">Watch Our Story</h2>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/CHvR240VaaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+							<p><a href="https://www.youtube.com/channel/UCl6VFyXDtCtH-_LZO5r6t2Q" class="btn btn-primary btn-round btn-lg align-center" style="margin-top:20px; margin-bottom:20px;">View our YouTube channel</a></p>
+						</div>
 				</div>
 
 			</div>
@@ -215,8 +232,14 @@
 										<div class="col-sm-12 col-md-6">
 										   
 										   <p>
-											   <span itemprop="openingHours" content="Tu,We,Th,Fr,Sa 10:00-17:00">Opening times:<br/>Tuesday to Saturday 10am to 5pm</span><br/>
-											   Sunday - Monday Closed.
+											   Opening times:<br/>
+											   <span itemprop="openingHours" content="Mo Closed">Monday - Closed</span><br/>
+											   <span itemprop="openingHours" content="Tu 10:00-17:00">Tuesday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="We 12:00-19:00">Wednesday - 12pm to 7pm</span><br/>
+											   <span itemprop="openingHours" content="Th 10:00-17:00">Thursday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="Fr 12:00-19:00"> Friday - 12pm to 7pm</span><br/>
+											   <span itemprop="openingHours" content="Sa 10:00-17:00">Saturday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="Su Closed">Sunday - Closed</span>
 											</p>
 											<p>Phone: <span itemprop="telephone">01473 822554</span></p>
 											

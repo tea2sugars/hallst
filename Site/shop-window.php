@@ -45,7 +45,7 @@
 	  ga('send', 'pageview');
 	
 	</script>
-	
+		
 	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
     
 </head>
@@ -113,6 +113,7 @@
 			<p class="text-center"><?php perch_content('gallery-second-instructions');?></p>
 		</div>
 			<form method="post" name="shop-window-form" action="assets/php/form-to-email.php">
+				
 				<div class="form-group">
 					<ul>
 						<?php perch_content('gallery-image');?>
