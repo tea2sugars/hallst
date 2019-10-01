@@ -185,9 +185,14 @@
 										<div class="col-sm-12 col-md-6">
 										   
 										   <p>
-											   <span itemprop="openingHours" content="Tu,We,Th,Fr,Sa 10:00-17:00">Opening times:<br/>Tuesday to Saturday 10am to 5pm</span><br/>
-											   <span itemprop="openingHours" content="Su 11:00-15:00">Sunday 11am to 3pm</span><br/>
-											   Monday Closed.
+											   Opening times:<br/>
+											   <span itemprop="openingHours" content="Mo Closed">Monday - Closed</span><br/>
+											   <span itemprop="openingHours" content="Tu 10:00-17:00">Tuesday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="We 10:00-17:00">Wednesday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="Th 10:00-17:00">Thursday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="Fr 11:00-18:00"> Friday - 11pm to 6pm</span><br/>
+											   <span itemprop="openingHours" content="Sa 10:00-18:00">Saturday - 10am to 6pm</span><br/>
+											   <span itemprop="openingHours" content="Su 11:00-16:00">Sunday - 11am to 4pm</span>
 											</p>
 											<p>Phone: <span itemprop="telephone">01787 464828</span></p>
 											
@@ -235,10 +240,10 @@
 											   Opening times:<br/>
 											   <span itemprop="openingHours" content="Mo Closed">Monday - Closed</span><br/>
 											   <span itemprop="openingHours" content="Tu 10:00-17:00">Tuesday - 10am to 5pm</span><br/>
-											   <span itemprop="openingHours" content="We 12:00-19:00">Wednesday - 12pm to 7pm</span><br/>
+											   <span itemprop="openingHours" content="We 10:00-17:00">Wednesday - 10am to 5pm</span><br/>
 											   <span itemprop="openingHours" content="Th 10:00-17:00">Thursday - 10am to 5pm</span><br/>
-											   <span itemprop="openingHours" content="Fr 12:00-19:00"> Friday - 12pm to 7pm</span><br/>
-											   <span itemprop="openingHours" content="Sa 10:00-17:00">Saturday - 10am to 5pm</span><br/>
+											   <span itemprop="openingHours" content="Fr 11:00-18:00"> Friday - 11pm to 6pm</span><br/>
+											   <span itemprop="openingHours" content="Sa 10:00-18:00">Saturday - 10am to 6pm</span><br/>
 											   <span itemprop="openingHours" content="Su Closed">Sunday - Closed</span>
 											</p>
 											<p>Phone: <span itemprop="telephone">01473 822554</span></p>

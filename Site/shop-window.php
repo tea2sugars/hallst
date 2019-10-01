@@ -102,7 +102,6 @@
 					<li class="filter" data-filter=".knitwear"><a href="#0" data-type="knitwear">Knitwear</a></li>
 					<li class="filter" data-filter=".coats"><a href="#0" data-type="coats">Coats &amp; Jackets</a></li>
 					<li class="filter" data-filter=".accessories"><a href="#0" data-type="accessories">Accessories</a></li>
-					<li class="filter" data-filter=".new"><a href="#0" data-type="new">New Arrivals</a></li>
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
