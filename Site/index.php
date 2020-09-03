@@ -190,7 +190,7 @@
 											   <span itemprop="openingHours" content="Tu 10:00-17:00">Tuesday - 10am to 5pm</span><br/>
 											   <span itemprop="openingHours" content="We 10:00-17:00">Wednesday - 10am to 5pm</span><br/>
 											   <span itemprop="openingHours" content="Th 10:00-17:00">Thursday - 10am to 5pm</span><br/>
-											   <span itemprop="openingHours" content="Fr 11:00-18:00"> Friday - 11pm to 6pm</span><br/>
+											   <span itemprop="openingHours" content="Fr 11:00-18:00"> Friday - 11am to 6pm</span><br/>
 											   <span itemprop="openingHours" content="Sa 10:00-18:00">Saturday - 10am to 6pm</span><br/>
 											   <span itemprop="openingHours" content="Su 11:00-16:00">Sunday - 11am to 4pm</span>
 											</p>
@@ -242,7 +242,7 @@
 											   <span itemprop="openingHours" content="Tu 10:00-17:00">Tuesday - 10am to 5pm</span><br/>
 											   <span itemprop="openingHours" content="We 10:00-17:00">Wednesday - 10am to 5pm</span><br/>
 											   <span itemprop="openingHours" content="Th 10:00-17:00">Thursday - 10am to 5pm</span><br/>
-											   <span itemprop="openingHours" content="Fr 11:00-18:00"> Friday - 11pm to 6pm</span><br/>
+											   <span itemprop="openingHours" content="Fr 11:00-18:00"> Friday - 11am to 6pm</span><br/>
 											   <span itemprop="openingHours" content="Sa 10:00-18:00">Saturday - 10am to 6pm</span><br/>
 											   <span itemprop="openingHours" content="Su Closed">Sunday - Closed</span>
 											</p>

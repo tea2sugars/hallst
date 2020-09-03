@@ -19,6 +19,7 @@
 	<link href="assets/css/magnific-popup.css" rel="stylesheet">
 	<link href="assets/css/flexslider.css" rel="stylesheet">
 	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/fancybox/core.css" rel="stylesheet">
 	
 	<!-- Template core CSS -->
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -47,6 +48,21 @@
 	</script>
 		
 	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+	
+	<script type="text/javascript">
+		function('[data-fancybox="gallery"]').fancybox({
+		  buttons : [ 
+		    'slideShow',
+		    'share',
+		    'zoom',
+		    'fullScreen',
+		    'close'
+		  ],
+		  thumbs : {
+		    autoStart : true
+		  }
+		});
+		</script>
     
 </head>
 <body id="gallery">
@@ -114,7 +130,7 @@
 			<form method="post" name="shop-window-form" action="assets/php/form-to-email.php">
 				
 				<div class="form-group">
-					<ul>
+					<ul class="gallery">
 						<?php perch_content('gallery-image');?>
 					</ul>
 				</div>
@@ -229,7 +245,8 @@
 	</div>
 
 	<!-- Javascript files -->
-	<script src="assets/js/jquery-2.1.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/fancybox/core.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
 	<script src="assets/js/appear.js"></script>

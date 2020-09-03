@@ -1,9 +1,12 @@
 <li class="mix <perch:content id="gallery_category" type="select" label="Gallery Filter Category"
-options="Shoes|shoes, Jeans & Trousers|jeans_and_trousers, Shirts|shirts, Knitwear|knitwear, Coats & Jackets|coats, Accessories|accessories, New Arrivals|new" allowempty="false" required="true"/>">
+options="Shoes|shoes, Jeans & Trousers|jeans_and_trousers, Shirts|shirts, Knitwear|knitwear, Coats & Jackets|coats, Accessories|accessories, New Arrivals|new" allowempty="false" required="true"/>" >
 
 	<input type="checkbox" name="item[]" id="cb_<perch:content id="item_name" label="Item Name"/>" value="cb_<perch:content id="item_name"/>" />
     <label for="cb_<perch:content id="item_name"/>">
     	<img src="<perch:content id="brand_image" type="image" label="Gallery Image" bucket="gallery-images" width="470px" height="530px" crop="true"/>" alt="<perch:content id="item_name"/>" height="265" width="235px"/>
     	<span class="h4"><perch:content id="item_name" type="text"/></span>
     	<p><perch:content id="item_description" type="text" label="Item Description"/></p></label>
+	<a href="<perch:content id="brand_image" type="image" label="Gallery Image" bucket="gallery-images" crop="true"/>" data-fancybox="images" data-type="image" style="padding-left:10px; text-decoration: underline;">
+		<strong><span class="icon-expand"></span> View item in gallery</strong>
+		</a>
 </li>
